@@ -25,8 +25,6 @@ import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 
 import java.util.concurrent.atomic.AtomicBoolean;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 /**
  * Created at 27/09/12 17:32.<br>
@@ -37,7 +35,7 @@ public class PropertyEditorController extends NodeController {
     /**
      * The logger
      */
-    private static final Logger logger = Logger.getLogger(PropertyEditorController.class.getName());
+    private static final System.Logger logger = System.getLogger(PropertyEditorController.class.getName());
 
     private final PropertyElementValidator propertyElementValidator;
 
@@ -132,7 +130,7 @@ public class PropertyEditorController extends NodeController {
             }
         } catch (AdapterException e) {
             // The model value can not be adapted to the view
-            logger.log(Level.FINE, e.getMessage(), e);
+            logger.log(System.Logger.Level.TRACE, e.getMessage(), e);
         }
     }
 

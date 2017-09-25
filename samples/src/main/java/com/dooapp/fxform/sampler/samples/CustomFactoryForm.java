@@ -1,8 +1,8 @@
-package com.dooapp.fxform.samples;
+package com.dooapp.fxform.sampler.samples;
 
 import com.dooapp.fxform.FXForm;
-import com.dooapp.fxform.FXFormSample;
-import com.dooapp.fxform.Utils;
+import com.dooapp.fxform.sampler.FXFormSample;
+import com.dooapp.fxform.sampler.Utils;
 import com.dooapp.fxform.annotation.Accessor;
 import com.dooapp.fxform.annotation.FormFactory;
 import com.dooapp.fxform.builder.FXFormBuilder;
@@ -88,6 +88,11 @@ public class CustomFactoryForm extends FXFormSample {
         form.setSource(userWithCustomFactory);
         root.getChildren().add(form);
         return root;
+    }
+
+    @Override
+    public String getControlStylesheetURL() {
+        return null;
     }
 
     @Override

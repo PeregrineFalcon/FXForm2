@@ -21,7 +21,6 @@ import javafx.scene.Node;
 import java.io.IOException;
 import java.net.URL;
 import java.util.concurrent.Callable;
-import java.util.logging.Logger;
 
 /**
  * Created at 26/09/12 13:49.<br>
@@ -30,7 +29,7 @@ import java.util.logging.Logger;
  */
 public class FXMLSkin extends NodeSkin {
 
-    private final Logger logger = Logger.getLogger(FXMLSkin.class.getName());
+    private final System.Logger logger = System.getLogger(FXMLSkin.class.getName());
 
     private final URL url;
 

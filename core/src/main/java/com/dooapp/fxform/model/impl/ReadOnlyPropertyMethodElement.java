@@ -19,7 +19,6 @@ import java.lang.annotation.Annotation;
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
-import java.util.logging.Logger;
 
 /**
  * An element based on a Method to access a property.
@@ -30,7 +29,7 @@ import java.util.logging.Logger;
  */
 public class ReadOnlyPropertyMethodElement<SourceType, WrappedType> extends AbstractSourceElement<SourceType, WrappedType> implements Element<WrappedType> {
 
-    private final static Logger logger = Logger.getLogger(ReadOnlyPropertyMethodElement.class.getName());
+    private final static System.Logger logger = System.getLogger(ReadOnlyPropertyMethodElement.class.getName());
 
     protected final Field field;
 
